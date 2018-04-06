@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://servicio/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="WSParcial2" targetNamespace="http://servicio/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/Parcial2PWD_WS-war/WSParcial2?xsd=1" namespace="http://servicio/" />
+    </xsd:schema>
+  </types>
+  <message name="buscarTest">
+    <part name="parameters" element="tns:buscarTest" />
+  </message>
+  <message name="buscarTestResponse">
+    <part name="parameters" element="tns:buscarTestResponse" />
+  </message>
+  <message name="crearTest">
+    <part name="parameters" element="tns:crearTest" />
+  </message>
+  <message name="crearTestResponse">
+    <part name="parameters" element="tns:crearTestResponse" />
+  </message>
+  <message name="editarTest">
+    <part name="parameters" element="tns:editarTest" />
+  </message>
+  <message name="editarTestResponse">
+    <part name="parameters" element="tns:editarTestResponse" />
+  </message>
+  <message name="eliminarTest">
+    <part name="parameters" element="tns:eliminarTest" />
+  </message>
+  <message name="eliminarTestResponse">
+    <part name="parameters" element="tns:eliminarTestResponse" />
+  </message>
+  <message name="listarTest">
+    <part name="parameters" element="tns:listarTest" />
+  </message>
+  <message name="listarTestResponse">
+    <part name="parameters" element="tns:listarTestResponse" />
+  </message>
+  <portType name="WSParcial2">
+    <operation name="buscarTest">
+      <input wsam:Action="http://servicio/WSParcial2/buscarTestRequest" message="tns:buscarTest" />
+      <output wsam:Action="http://servicio/WSParcial2/buscarTestResponse" message="tns:buscarTestResponse" />
+    </operation>
+    <operation name="crearTest">
+      <input wsam:Action="http://servicio/WSParcial2/crearTestRequest" message="tns:crearTest" />
+      <output wsam:Action="http://servicio/WSParcial2/crearTestResponse" message="tns:crearTestResponse" />
+    </operation>
+    <operation name="editarTest">
+      <input wsam:Action="http://servicio/WSParcial2/editarTestRequest" message="tns:editarTest" />
+      <output wsam:Action="http://servicio/WSParcial2/editarTestResponse" message="tns:editarTestResponse" />
+    </operation>
+    <operation name="eliminarTest">
+      <input wsam:Action="http://servicio/WSParcial2/eliminarTestRequest" message="tns:eliminarTest" />
+      <output wsam:Action="http://servicio/WSParcial2/eliminarTestResponse" message="tns:eliminarTestResponse" />
+    </operation>
+    <operation name="listarTest">
+      <input wsam:Action="http://servicio/WSParcial2/listarTestRequest" message="tns:listarTest" />
+      <output wsam:Action="http://servicio/WSParcial2/listarTestResponse" message="tns:listarTestResponse" />
+    </operation>
+  </portType>
+  <binding name="WSParcial2PortBinding" type="tns:WSParcial2">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="buscarTest">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="crearTest">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="editarTest">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarTest">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarTest">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="WSParcial2">
+    <port name="WSParcial2Port" binding="tns:WSParcial2PortBinding">
+      <soap:address location="http://localhost:8080/Parcial2PWD_WS-war/WSParcial2" />
+    </port>
+  </service>
+</definitions>

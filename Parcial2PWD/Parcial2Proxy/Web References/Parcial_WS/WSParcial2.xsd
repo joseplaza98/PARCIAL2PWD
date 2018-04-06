@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://servicio/" targetNamespace="http://servicio/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="buscarTest" type="tns:buscarTest" />
+  <xs:element name="buscarTestResponse" type="tns:buscarTestResponse" />
+  <xs:element name="crearTest" type="tns:crearTest" />
+  <xs:element name="crearTestResponse" type="tns:crearTestResponse" />
+  <xs:element name="editarTest" type="tns:editarTest" />
+  <xs:element name="editarTestResponse" type="tns:editarTestResponse" />
+  <xs:element name="eliminarTest" type="tns:eliminarTest" />
+  <xs:element name="eliminarTestResponse" type="tns:eliminarTestResponse" />
+  <xs:element name="listarTest" type="tns:listarTest" />
+  <xs:element name="listarTestResponse" type="tns:listarTestResponse" />
+  <xs:complexType name="eliminarTest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Test" type="tns:test" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="test">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CADENA" type="xs:string" />
+      <xs:element name="ENTERO" type="xs:int" />
+      <xs:element minOccurs="0" name="FECHA" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarTestResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="editarTest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Test" type="tns:test" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="editarTestResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarTest">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarTestResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="crearTest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Test" type="tns:test" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="crearTestResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:test" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarTest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Test" type="tns:test" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarTestResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:test" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
