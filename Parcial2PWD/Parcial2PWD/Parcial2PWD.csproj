@@ -91,6 +91,10 @@
     <Content Include="Assets\js\popper.min.js" />
     <Content Include="Default.aspx" />
     <Content Include="DefaultIni.aspx" />
+    <Content Include="Imagen\ACEITE_COCO.jpg" />
+    <Content Include="Imagen\Arequepie_Sabrococos.png" />
+    <Content Include="Imagen\COCADAS_Sabro.jpg" />
+    <Content Include="Imagen\Logo_Sabro.jpg" />
     <Content Include="Login.aspx" />
     <Content Include="Registrar.aspx" />
     <Content Include="Site.Master" />

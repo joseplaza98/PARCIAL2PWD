@@ -3,15 +3,19 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
+    
+    <br/>
+    <h1 class="text-center">Formulario de Registro a la Plataforma Sabrococos-Guapi</h1>
+    <br/>
     <div class="container">
-        <form>
+        <form> 
             <div class="form-row">
                 <div class="col-md-4 mb-3">
                     <label for="txtNombre1">Primer Nombre</label>
                     <input type="text" class="form-control is-valid" id="txtNombre1" placeholder="Primer nombre" value="" required>
                     <div class="valid-feedback">
                     </div>
+                </div>
                 </div>
                 <div class="form-row">
                     <div class="col-md-4 mb-3">
@@ -20,6 +24,8 @@
                         <div class="valid-feedback">
                         </div>
                     </div>
+                    </div>
+            <div class="form-row">
                     <div class="col-md-4 mb-3">
                         <label for="txtApellido">Apellidos</label>
                         <input type="text" class="form-control is-valid" id="txtApellido" placeholder="Apellidos" value="" required>
@@ -27,7 +33,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+         
             <div class="form-row">
                 <div class="col-md-2 mb-3">
                     <label for="txtUsuario">Nombre de Usuario</label>
@@ -81,6 +87,7 @@
                 <br />
 
                 <button class="btn btn-primary" type="submit" id="btnRegistrar">Registrar</button>
+            </div>
             </div>
         </form>
 </asp:Content>
